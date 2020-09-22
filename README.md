@@ -1,6 +1,7 @@
 ﻿<div align="center">
 
-## Compact and Repair Access Database<br/>by Chris Peneguy
+## Compact and Repair Access Database
+
 
 </div>
 
@@ -11,13 +12,30 @@ Compact and Repair
 You can use the "Compact and Repair" function in Access from ASP code. The following code is an example of how this can be done. Note that when you decide to "Compact and Repair" your Access database, some autonumbers can be changed. Access makes all autonumbers consecutive.
 
 This code uses one database, but I'm sure the code can easily be changed so that the listbox displays, for example, all the databases in one folder.
+ 
+### More Info
+ 
+
+
+<span>             |<span>
+---                |---
+**Submitted On**   |
+**By**             |[Chris Peneguy](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByAuthor/chris-peneguy.md)
+**Level**          |Advanced
+**User Rating**    |4.3 (26 globes from 6 users)
+**Compatibility**  |ASP \(Active Server Pages\)
+**Category**       |[Databases](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByCategory/databases__4-5.md)
+**World**          |[ASP / VbScript](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByWorld/asp-vbscript.md)
+**Archive File**   |[](https://github.com/Planet-Source-Code/chris-peneguy-compact-and-repair-access-database__4-7404/archive/master.zip)
 
 ### API Declarations
 
 Use as you wish
 
+
 ### Source Code
 
+```
 <%
 Const Jet_Conn_Partial = "Provider=Microsoft.Jet.OLEDB.4.0; Data source="
 Dim strDatabase, strFolder, strFileName
@@ -85,4 +103,5 @@ End Select
 <form method="POST" action="">
 <p><%dbList%><input type="submit" value="Compact" name="cmd"></p>
 </form>
+```
 
